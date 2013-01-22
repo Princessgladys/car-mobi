@@ -1,5 +1,14 @@
 var startApp = function() {
   debug('started');
+  document.addEventListener("backbutton", function(e){
+        if($.mobile.activePage.is('#home')){
+            e.preventDefault();
+            navigator.app.exitApp();
+        }
+        else {
+            navigator.app.backHistory()
+        }
+  }, false);
 
 };
 
@@ -56,6 +65,7 @@ function showCarMarker(oldPos) {
                     debug(point.latLng);
                     db.setItem('carPosLat', point.latLng.lat());
                     db.setItem('carPosLng', point.latLng.lng());
+                    showDialog("position saved", 2);
                 });
 
                 $carMark.dragend(function(e){
@@ -94,7 +104,11 @@ function showCarMarker(oldPos) {
 }
 
 $('#mapPage').live('pageshow', function() {
-    var page = $(this).data("url").split("?")[1];
+    console.log(document.location.href);
+    //var p = new RegExp("^.*\?");
+    //var page = document.location.href.replace(p, "");
+    var page = document.location.href.split("?")[1];
+    console.log("page", page)
     if (!mapLoaded) {
         loadMap(this);
     }

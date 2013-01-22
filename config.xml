@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "com.aydmultimedia.where-is-my-car"
+        version   = "0.0.1">
+    <!-- "753XPC322F.com.aydmultimedia.meliton.citas" -->
+    <name>Where Is My Car?</name>
+
+    <description>
+        Save your car position, so you never forget where you left it
+    </description>
+
+    <author href="http://aydmultimedia.com" email="info@aydmultimedia.com">
+        AyD Multimedia
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="phonegap-version" value="2.0.0" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+    <preference name="android-installLocation" value="preferExternal" />
+
+    <icon src="img/icons/android/iconDC72.png" />
+<!--
+    <icon src="img/iconosDCi/android/DC36.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="img/iconosDCi/android/DC48.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="img/iconosDCi/android/DC72.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="img/iconosDCi/android/DC96.png.png"  gap:platform="android"    gap:density="xhdpi" />
+
+
+    <icon src="img/iconosDCi/iOS/iconoDC57.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="img/iconosDCi/iOS/iconoDC72png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="img/iconosDCi/iOS/iconoDC114.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="img/iconosDCi/iOS/iconoDC144.png"         gap:platform="ios"        width="144" height="144" />
+    --><!--
+    <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" />
+    <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
+    <icon src="res/icon/webos/icon-64.png"          gap:platform="webos" />
+    <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
+    <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
+ --><!--
+    <gap:splash src="img/splash/screen-iphone-portrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="img/splash/screen-iphone-portrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="img/splash/screen-ipad-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/splash/screen-ipad-lanscape.png" gap:platform="android" gap:density="xhdpi" />
+
+    <gap:splash src="img/splash/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="img/splash/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="img/splash/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="img/splash/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
+    -->
+</widget>

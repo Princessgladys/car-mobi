@@ -1,0 +1,10 @@
+#!/bin/bash
+ADB=/home/daniel/projekty/_moje/android/android-sdk-linux/platform-tools/adb
+#wget https://build.phonegap.com/apps/199576/download/android -O citas.apk
+wget https://build.phonegap.com/apps/231563/download/android -O player.apk
+$ADB install -r -s player.apk
+
+echo ""
+echo "starting monitoring..."
+
+$ADB logcat | grep Cordova
