@@ -25,3 +25,7 @@
   $(document).bind('mobileinit', onMobileInit);
   document.addEventListener("deviceready", onDeviceReady, false);
 })();
+
+function debug(x) {
+    console.log(x);
+}

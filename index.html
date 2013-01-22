@@ -2,13 +2,13 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>phonegap & jquery mobile boilerplate</title>
-  
+  <title>Where Is My Car</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
   <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
   <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
-  
+
   <script>
     var userAgent = navigator.userAgent + '';
     if (userAgent.indexOf('iPhone') > -1) {
@@ -21,32 +21,80 @@
       var mobile_system = '';
     }
   </script>
-  
+
   <script src="js/lib/jquery.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
-  
+
   </head>
   <body>
-    
-    <div data-role="page">
+
+    <div data-role="page" id="home">
 
     	<div data-role="header">
-    		<h1>Single page</h1>
+    		<h1>Home</h1>
     	</div><!-- /header -->
 
-    	<div data-role="content">	
-    		<p>This is a single page boilerplate template that you can copy to build your first jQuery Mobile page. Each link or form from here will pull a new page in via Ajax to support the animated page transitions.</p>
-    		<p>This template is standard HTML document with a single "page"</p>
+    	<div data-role="content" style="text-align: center;">
+    	    <div style="">
+                <a href="#mapPage?read" data-theme="b" data-role="button">So, where is my car?</a>
+                <a href="#mapPage?set" data-theme="e" data-role="button">Save my position</a>
+                <a href="#about" data-theme="a" data-role="button">About</a>
+            </div>
     	</div><!-- /content -->
 
-    	<div data-role="footer">
-    		<h4>Footer content</h4>
+    	<div data-role="footer" data-position="fixed">
+    		<h4>(c) aydmultimedia.com 2013</h4>
     	</div><!-- /footer -->
 
     </div><!-- /page -->
-    
+
+    <div data-role="page" id="mapPage">
+
+    	<div data-role="header">
+    		<a href="#home" data-icon="back" >back</a>
+    		<h1>Map</h1>
+    	</div><!-- /header -->
+
+    	<div data-role="content" id="map" style="height:100%">
+
+    	</div><!-- /content -->
+
+    	<div data-role="footer" data-position="fixed">
+    		<h4>(c) aydmutlimedia.com 2013</h4>
+    	</div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" id="about">
+
+    	<div data-role="header">
+    		<a href="#home" data-icon="back">back</a>
+    		<h1>About</h1>
+    	</div><!-- /header -->
+
+    	<div data-role="content"  style="">
+        <h2>Where is my car v0.1</h2>
+
+        (c) Daniel Zelisko 2013<br />
+        aydmultimedia.com<br/>
+        daniel@zelisko.net </br></br>
+
+        License LGPL</br>
+        <strong>source</strong>: http://github.com/danielzzz </br>
+        Map icons by mapicons collection project
+    	</div><!-- /content -->
+
+    	<div data-role="footer" data-position="fixed">
+    		<h4>(c) aydmutlimedia.com 2013</h4>
+    	</div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div id="stat" style="display: none; background: black; color: white; text-align: center; width: 80%; padding: 10px; border: 1px solid #ccc; position: fixed; top: 20%; left: 10%">asdasdas</div>
+    <script src="js/lib/jquery.map.js"></script>
   </body>
 </html>
