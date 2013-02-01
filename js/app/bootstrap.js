@@ -27,5 +27,5 @@
 })();
 
 function debug(x) {
-    console.log(x);
+    //console.log(x);
 }
